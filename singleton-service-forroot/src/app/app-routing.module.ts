@@ -1,0 +1,19 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path:'',
+    pathMatch:'full',
+    redirectTo:'versioning'
+  },{
+    path:'versioning',
+    loadChildren: ()=>import('./versioning/versioning.module').then(m => m.VersioningModule)
+  }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

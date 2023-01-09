@@ -1,0 +1,16 @@
+
+
+.gallery-actions{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    .btn{
+        &:nth-child(1){
+            margin-right: 8px;
+        }
+        &:nth-child(2){
+            margin-left: 8px;
+        }
+    }
+}

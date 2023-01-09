@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="content__toggle-actions">
+    <h4 class="content__toggle-heading">
+      Visiblity = {{visiblity}}
+    </h4>
+
+    <button class="btn content__toggle-actions__action" [ngClass]="visiblity === VISIBLITY.On ? 'btn-primary' :
+    'btn-light'" (click)="setVisiblity (VISIBLITY.On)">Visiblity On</button>
+
+    <button class="btn content__toggle-actions__action" [ngClass]="visiblity === VISIBLITY.Off ? 'btn-primary' :
+    'btn-light'" (click)="setVisiblity(VISIBLITY.Off)">Visiblity Off</button>
+
+    <div class="page-content" *appIfNot="visiblity === VISIBLITY.On">
+      <h2>Content to show when visiblity is off</h2>
+    </div>
+
+  </div>
+</div>

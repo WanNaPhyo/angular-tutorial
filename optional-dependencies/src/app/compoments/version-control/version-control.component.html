@@ -1,0 +1,10 @@
+<form [formGroup]="versionForm" (ngSubmit)="formSubmit">
+  <div class="form-group">
+    <label for="versionNumber">version Number</label>
+    <input type="text" class="formControl" id="versionNumber" formControlName="version"
+    aria-describedby="versionHelp" placeholder="Enter version number">
+    <small id="versionHelp" class="from-text text-muted">User sematic Version</small>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<app-v-logs [vName]="versionName"></app-v-logs>
