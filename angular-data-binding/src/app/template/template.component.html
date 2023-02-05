@@ -1,0 +1,61 @@
+<div class="container mt-4">
+  <h4>Template Driven Form</h4>
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          <h5>Student Form</h5>
+        </div>
+        <div class="card-body">
+          <form action="" #form="ngForm" (ngSubmit)="onSave(form)">
+            <label for="name" class="input-group-lable">Name</label>
+            <div class="input-group mb-2">
+              <input type="text" name="name" ngModel #name="ngModel" id="name" class="form-control">
+              <span class="input-group-text">X</span>
+            </div>
+            <label for="age" class="input-group-label">Age</label>
+            <div class="input-group">
+              <input type="number" name="age" ngModel #age="ngModel" id="age" class="form-control">
+              <span class="input-group-text">X</span>
+            </div>
+            <label for="email" class="input-group-label">Email</label>
+            <div class="input-group">
+              <input type="text" name="email" ngModel #email="ngModel" id="email" class="form-control">
+              <span class="input-group-text">X</span>
+            </div>
+            <br>
+              <button type="submit" class="btn btn-outline-info">Save</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          <h5>Student List</h5>
+        </div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{studentForm.name}}</td>
+                <td>{{studentForm.age}}</td>
+                <td>{{studentForm.email}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "commu-demo": {
+    "angular-data-binding": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/commu-demo",
+            "outputPath": "dist/angular-data-binding",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "commu-demo:build:production"
+              "browserTarget": "angular-data-binding:build:production"
             },
             "development": {
-              "browserTarget": "commu-demo:build:development"
+              "browserTarget": "angular-data-binding:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "commu-demo:build"
+            "browserTarget": "angular-data-binding:build"
           }
         },
         "test": {
@@ -96,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": "2d351af4-5588-426a-97d6-a5fbd77a148d"
+    "analytics": "b6483fec-5288-4b7e-acf9-e3743090c8e9"
   }
 }
